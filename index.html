@@ -14,6 +14,37 @@
             /* Ensure it stays behind other elements */
             background: linear-gradient(137deg, white, white);
         }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header nav {
+                margin-top: 10px;
+            }
+
+            .header nav span {
+                margin-right: 15px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile img {
+                height: 150px;
+                width: 150px;
+            }
+
+            .image-section img {
+                height: auto;
+                width: 90%;
+            }
+        }
     </style>
 </head>
 
@@ -32,14 +63,10 @@
                 <img src="/images/chat.png" style="height: 20px;margin-top: 15px;" />
                 <p style="margin-left: 10px;">sranyal41@gmail.com</p>
             </div>
-        </div>
-        <div style="margin-top: 15px;">
-            <span style="margin-right: 50px;cursor: pointer;">About me</span>
+        </div style="">
+        <div style="margin-top: 15px;margin-right:200px;">
             <span style="margin-right: 50px;cursor: pointer;">Experience</span>
-            <span style="margin-right: 50px;cursor: pointer;">Projects</span>
-            <span style="margin-right: 50px;cursor: pointer;">Education</span>
-            <span style="margin-right: 50px;cursor: pointer;">Skills</span>
-            <span style="margin-right: 50px;cursor: pointer;">Interests</span>
+            <span onclick="location.href='./techStack.html'">Tech Stack</span>
         </div>
 
     </div>
@@ -76,6 +103,12 @@
 
         <img src="/images/main1.jpg" style="margin-top: 10px;margin-left: 174px;height:500px;  background: linear-gradient(to right, rgba(140, 129, 129, 0) 0%, rgba(255, 255, 255, 1) 100%);
     padding: 20px;  border-radius: 100%;" />
+    </div>
+
+    <div style="line-height: 12px;">
+        Skills
+        <img src="./images/html.png" style="line-height: 12px;" />
+        <img src="./images/css-3.png" />
     </div>
     <script>
         particlesJS("particles-js", {
